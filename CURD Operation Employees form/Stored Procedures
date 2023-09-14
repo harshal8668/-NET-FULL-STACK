@@ -1,0 +1,49 @@
+//Delete the record from database
+create proc DeleteData
+	@EmpID int
+as
+begin
+delete FormData  where ID=@EmpID
+end
+
+//Display all the record from database
+create proc DisplayData
+as 
+begin
+select * from FormData
+end
+
+//insert  the record to database
+create PROCEDURE InsertData
+	@EmpID int,
+	@EmpName nvarchar(50),
+	@EmpPhone_No numeric(18,0),
+	@EmpAge int,
+	@EmpSex nvarchar(50),
+	@EmpCity nvarchar(50)
+AS
+BEGIN
+	Insert into FormData(ID,Name,Phone_No,Age,Sex,City)
+	values(@EmpID,@EmpName,@EmpPhone_No,@EmpAge,@EmpSex,@EmpCity)
+END
+
+//update  the record in database
+create proc UpdateData
+	@EmpID int,
+	@EmpName nvarchar(50),
+	@EmpPhone_No numeric(18,0),
+	@EmpAge int,
+	@EmpSex nvarchar(50),
+	@EmpCity nvarchar(50)
+as
+begin
+Update FormData set Name=@EmpName,Phone_No=@EmpPhone_No,Age=@EmpAge,City=@EmpCity,Sex=@EmpSex where ID=@EmpID
+end
+
+//view the record with id from database
+create proc ViewData
+@EmpId int
+as 
+begin
+select * from FormData where ID=@EmpId
+end
