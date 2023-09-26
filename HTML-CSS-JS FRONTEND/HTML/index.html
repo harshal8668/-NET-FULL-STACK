@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit King</title>
+    <link rel="stylesheet" href="/CSS/HeaderNavbar.css" />
+    <link rel="stylesheet" href="/CSS/Footer.css" />
+    <link rel="stylesheet" href="/CSS/Slider.css" />
+    <link rel="stylesheet" href="/CSS/homebody.css" />
+    <script src="/JS/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <ul>
+          <li>
+            Fruit King<img id="logo" src="/Images/crown-rem.png" alt="" />
+          </li>
+          <li id="home" onclick="changetoHome()">Home</li>
+          <li id="About" onclick="changetoAbout()">About</li>
+          <li id="contact" onclick="changetoContact()">Contact</li>
+          <li>
+            <div class="dropdown-shop">
+              <div>Store</div>
+              <div class="dropdown-shop-container">
+                <a href="" class="dropdown-shop-item">Cart</a>
+                <a href="" class="dropdown-shop-item">Products</a>
+                <a href="" class="dropdown-shop-item">Services</a>
+              </div>
+            </div>
+          </li>
+          <li><img src="/Images/profile.png" alt="ACC" /></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="slider-container">
+      <div class="mySlides">
+        <img
+          class="slide-img"
+          src="/Images/sliderImg1.jpg"
+          style="width: 100%"
+        />
+        <div class="slide-img overslide-img" style="width: 100%"></div>
+      </div>
+    </div>
+
+    <div style="text-align: center">
+      <div class="title-container">
+        <img id="title-img" src="/Images/crown-rem.png" alt="" />
+        <h1 class="title-text">Fruit King</h1>
+      </div>
+      <div class="animate-text">
+        <p class="slide-img-text1">100% Fresh Fruit Products</p>
+        <p class="slide-img-text2">We serve you the fresh fruits and juices</p>
+      </div>
+    </div>
+
+    <div id="features-title">
+      Features
+    </div>
+
+    <div class="flex-container">
+      <div class="flex-item">
+        <img id="flex-item-img" src="/Images/quality.png" alt="" />
+        <h4>Superior Quality</h4>
+        <p>Better Quality Products</p>
+      </div>
+
+      <div class="flex-item">
+        <img id="flex-item-img" src="/Images/hygenic.png" alt="" />
+        <h4>Hygienic</h4>
+        <p>100% Hygienic</p>
+      </div>
+
+      <div class="flex-item">
+        <img id="flex-item-img" src="/Images/delivery.png" alt="" />
+        <h4>Shipping</h4>
+        <p>On-time Delivery</p>
+      </div>
+
+      <div class="flex-item">
+        <img id="flex-item-img" src="/Images/support.png" alt="" />
+        <h4>Support</h4>
+        <p>24/7 Support Assistant</p>
+      </div>
+    </div>
+
+    <div id="available-text">
+      What we make available for you?
+    </div>
+
+
+    <div style="text-align: center;">
+      <div class="flexbox-container">
+        <div class="flexbox-item item1">
+          <button>Fruit Box</button>
+          <img src="/Images/sliderImg2.jpg" alt="" />
+        </div>
+
+        <div class="flexbox-item item2">
+          <button>Fruit Juice</button>
+          <img class="item2-img" src="/Images/sliderImg3.jpg" alt="" />
+        </div>
+
+        <div class="flexbox-item item3">
+          <button>Salads</button>
+          <img class="item3-img" src="/Images/sliderImg4.jpg" alt="" />
+        </div>
+
+        <div class="flexbox-item item4">
+          <button>Dry Fruits</button>
+          <img src="/Images/sliderImg5.jpg" alt="" />
+        </div>
+        <div class="flexbox-item item5">
+          <button class="button-available">Get Subscriptions</button>
+          <img class="img-available" src="/Images/sliderImg1.jpg" alt="" />
+          <!-- <p>Fruits</p> -->
+        <!-- <p>Must health product of every home</p> -->
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-item-container">
+        <div class="footer-item">
+          <h4>Home</h4>
+          <ul id="footer-list-container">
+            <li id="footer-home-item">Home</li>
+            <li id="footer-home-item">Service</li>
+            <li id="footer-home-item">Features</li>
+            <li id="footer-home-item">Cart</li>
+            <li id="footer-home-item">About</li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h4>Service</h4>
+          <ul id="footer-list-container">
+            <li id="footer-home-item">Home</li>
+            <li id="footer-home-item">Service</li>
+            <li id="footer-home-item">Features</li>
+            <li id="footer-home-item">Cart</li>
+            <li id="footer-home-item">About</li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h4>Store Location</h4>
+          <ul id="footer-list-container">
+            <li id="footer-home-item">Home</li>
+            <li id="footer-home-item">Service</li>
+            <li id="footer-home-item">Features</li>
+            <li id="footer-home-item">Cart</li>
+            <li id="footer-home-item">About</li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h4>Products</h4>
+          <ul id="footer-list-container">
+            <li id="footer-home-item">Home</li>
+            <li id="footer-home-item">Service</li>
+            <li id="footer-home-item">Features</li>
+            <li id="footer-home-item">Cart</li>
+            <li id="footer-home-item">About</li>
+          </ul>
+        </div>
+      </div>
+      <hr style="height: 1px; margin-top: 20px" />
+
+      <div class="contact-icontext-container">
+        <p id="contact-text">Contact us on</p>
+
+        <div class="contact-icon-container">
+          <div>
+            <img id="contact-icon" src="/Images/whatsapps.png" alt="" />
+            <label id="contact-icon-text">+91 866831109</label>
+          </div>
+          <div>
+            <img id="contact-icon" src="/Images/gmail.png" alt="" />
+            <label id="contact-icon-text">fruitking@gmail.com</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="follow-icontext-container">
+        <p id="follow-text">Follow us on</p>
+        <div class="follow-icon-container">
+          <img id="follow-icon" src="/Images/instagrams.png" alt="" />
+          <img id="follow-icon" src="/Images/facebook.png" alt="" />
+          <img id="follow-icon" src="/Images/linkin.png" alt="" />
+          <img id="follow-icon" src="/Images/twitter.png" alt="" />
+        </div>
+      </div>
+
+      <hr style="height: 1px; margin-top: 25px; margin-bottom: 5px" />
+      <div class="copyright">
+        Copyright@2023 - Fruit King. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
